@@ -2,4 +2,5 @@
 * [Medium](https://medium.com/@ArQmANetwork)
 * [Discord](https://discord.gg/s9BQpJT)
 * [Telegram](https://t.me/joinchat/HNpOMRIiNSoCn0zYrAOofw)
+* [Reddit](https://www.reddit.com/r/arqma)
 * [Youtube channel](https://www.youtube.com/channel/UC24ZbH8J1SKpxmdakIJotoA)
