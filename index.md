@@ -19,39 +19,39 @@
     <div class="row center-xs">
       <div class="col-xs-12 col-lg-10 col-xl-8 text-left">
 
-	<h1>ArQmA</h1>
+	<h1><font color="ffd008">ArQmA</font></h1>
         <p>ArQmA - Revolution of the monetary system. Welcome!</p>
 
         <input type="checkbox" name="accordion" id="official_resources" checked>
-        <label for="official_resources"><h2>Official Resources</h2></label>
+        <label for="official_resources"><h2><font color="ffd008">Official Resources</font></h2></label>
         <div class="panel">
           {% capture official_resources %}{% include official_resources.md %}{% endcapture %}
           {{ official_resources | markdownify }}
         </div>
 
         <input type="checkbox" name="accordion" id="resources" checked>
-        <label for="resources"><h2>Resources</h2></label>
+        <label for="resources"><h2><font color="ffd008">Resources</font></h2></label>
         <div class="panel">
           {% capture resources %}{% include resources.md %}{% endcapture %}
           {{ resources | markdownify }}
         </div>
 
         <input type="checkbox" name="accordion" id="support" checked>
-        <label for="support"><h2>Support/Docs</h2></label>
+        <label for="support"><h2><font color="ffd008">Support/Docs</font></h2></label>
         <div class="panel">
           {% capture support %}{% include support.md %}{% endcapture %}
           {{ support | markdownify }}
         </div>
 
         <input type="checkbox" name="accordion" id="contributing" checked>
-        <label for="contributing"><h2>Contributing</h2></label>
+        <label for="contributing"><h2><font color="ffd008">Contributing</font></h2></label>
         <div class="panel">
           {% capture contributing %}{% include contributing.md %}{% endcapture %}
           {{ contributing | markdownify }}
         </div>
 
         <input type="checkbox" name="accordion" id="developer-guides" checked>
-        <label for="developer-guides"><h2>Developer Guides</h2></label>
+        <label for="developer-guides"><h2><font color="ffd008">Developer Guides</font></h2></label>
         <div class="panel">
           {% capture developer-guides %}{% include developer-guides.md %}{% endcapture %}
           {{ developer-guides | markdownify }}
