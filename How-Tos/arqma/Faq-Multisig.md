@@ -1,87 +1,87 @@
 <p>Copyright 2019 The ArQmA Project</p>
-<h1 id="arqma-22-multisig-wallet-transfers"><font color="ffd008">ArQmA 2/2 Multisig Wallet Transfers<</font>/h1>
+<h1 id="arqma-22-multisig-wallet-transfers"><font color="ffd008">ArQmA 2/2 Multisig Wallet Transfers</font>/h1>
 <p>Purpose: Enable a balance on a joint account that requires 2 or more signatures from separate accounts and their respective digital signatures. A spend transaction that is one way only forward can then be created and enabled from both parties. Refunds and recourses have to be dealt with the seller directly.</p>
 <p>Also, a third party signer could also be enabled as an escrow agent could also enable pend forward only transactions or with both buyer and seller agreeing to cancel a purchase the escrow agent can send funds to one party, both or the seller with signoff signatures.</p>
-<p>First, the buyers wallet to be converted to multisig <strong>must be empty</strong>. It is best to use a brand-new, separate walllet for the purpose, although not required. It is strongly advised to make a copy of the wallet files first, just in case something goes wrong. Also the buyer needs to transfer funds from their normal spending wallet to this multisig wallet for personal security and anonymitiy reasons. ### Set-up</p>
+<p>First, the buyers wallet to be converted to multisig must be empty. It is best to use a brand-new, separate walllet for the purpose, although not required. It is strongly advised to make a copy of the wallet files first, just in case something goes wrong. Also the buyer needs to transfer funds from their normal spending wallet to this multisig wallet for personal security and anonymitiy reasons. ### Set-up</p>
 <h4 id="step-1-initiate-creation-of-multisig-wallet-and-exchange-data"><font color="ffd008">Step 1 Initiate Creation of Multisig Wallet and Exchange Data</font></h4>
-<p><strong>Person A</strong> commands:</p>
-<p><code>[wallet 47HSuD]: prepare_multisig</code></p>
+<p>Person A commands:</p>
+<p><font color="ffd008">[wallet 47HSuD]: prepare_multisig</font></p>
 <p>The output will be something like:</p>
 <p>MultisigV1WHyBiEPV5rv3jgU59QUv2ZYTvmN3pwzCL8mp5jTDxkkhRzDjL1T8A2dHTYLmprbUsiLzvPLqRc1GkFHp3mq7dFq6BiE98Ur5cD6P46YYLd5QwD4diqe4VRSiS7GYHATbL4cLGidyNUbWha4EU7ET2jfJ7UKUVZRhNb5prZxfsJddbzaw Send this multisig info to all other participants, then use make_multisig &lt;info1&gt; [&lt;info2&gt;...] with others' multisig info</p>
 <p>This includes the PRIVATE view key, so needs to be disclosed only to that multisig wallet's participants</p>
 <p>Copy the entire line</p>
 <p>Multisig...bzaw be sure to capture the whole thing when copying. Send this line to person B.</p>
-<p><strong>Person B</strong> does the same and sends his output to person A. Person B commands:</p>
-<p><code>[wallet 48e86K]: prepare_multisig</code></p>
+<p>Person B does the same and sends his output to person A. Person B commands:</p>
+<p><font color="ffd008">[wallet 48e86K]: prepare_multisig</font></p>
 <p>Person B gets the output</p>
 <p>MultisigV1ZST26VmNuozbbHL9PeDuqiLDuMLCmaCRxBBLoK7yuxsHXyUiMr2SjxXgnsWrbmVRpghFTtcHEDLDnbPcqdoSuum1bLCFvmoFGrK7z3AtizKPTG96ukb4mzzqPcCD55ZCb1Y8cUL4RipVtcB4YbzZyK5eZdRLxAKi8TvyTD9h3QjVraXs Send this multisig info to all other participants, then use make_multisig &lt;info1&gt; [&lt;info2&gt;...] with others' multisig info This includes the PRIVATE view key, so needs to be disclosed only to that multisig wallet's participants and sends it to person A.</p>
 <h4 id="step-2-create-multisig-wallets"><font color="ffd008">Step 2 Create Multisig Wallets</font></h4>
 <p>Both person A and person B now have the</p>
-<p>Multisig... text from the other one. With that, each of them can create their part of the multisig wallet. Before you proceed, note that the <strong>wallet will lose access to the underlying account when converted to multisig</strong>. This is not really a problem, since we started with an empty one, and if all goes ok with this step, you won't ever need it unless you want to go through the process again for whatever reason (like HDD died, but you have the seed mnemonic of the underlying account and want to reconstruct the multisig wallet).</p>
-<p><strong>Person A</strong> commands:</p>
-<p><code>[wallet 47HSuD]: make_multisig 2 MultisigV1ZST26VmNuozbbHL9PeDuqiLDuMLCmaCRxBBLoK7yuxsHXyUiMr2SjxXgnsWrbmVRpghFTtcHEDLDnbPcqdoSuum1bLCFvmoFGrK7z3AtizKPTG96ukb4mzzqPcCD55ZCb1Y8cUL4RipVtcB4YbzZyK5eZdRLxAKi8TvyTD9h3QjVraXs</code></p>
+<p>Multisig... text from the other one. With that, each of them can create their part of the multisig wallet. Before you proceed, note that the wallet will lose access to the underlying account when converted to multisig. This is not really a problem, since we started with an empty one, and if all goes ok with this step, you won't ever need it unless you want to go through the process again for whatever reason (like HDD died, but you have the seed mnemonic of the underlying account and want to reconstruct the multisig wallet).</p>
+<p>Person A commands:</p>
+<p><font color="ffd008">[wallet 47HSuD]: make_multisig 2 MultisigV1ZST26VmNuozbbHL9PeDuqiLDuMLCmaCRxBBLoK7yuxsHXyUiMr2SjxXgnsWrbmVRpghFTtcHEDLDnbPcqdoSuum1bLCFvmoFGrK7z3AtizKPTG96ukb4mzzqPcCD55ZCb1Y8cUL4RipVtcB4YbzZyK5eZdRLxAKi8TvyTD9h3QjVraXs</font></p>
 <p>and the output will be something like:</p>
 <p>2/2 multisig address: 47RGRFeLPT51qvDWuw7SGf57JK7AziAVqYucct8z5yEDQ1XqU8zKEjidWjqPXk7PuHP3MJDN2AJATKy9PH7zaGV7MB8X6CH</p>
-<p><strong>Person B</strong> commands:</p>
-<p><code>[wallet 48e86K]: make_multisig 2 MultisigV1WHyBiEPV5rv3jgU59QUv2ZYTvmN3pwzCL8mp5jTDxkkhRzDjL1T8A2dHTYLmprbUsiLzvPLqRc1GkFHp3mq7dFq6BiE98Ur5cD6P46YYLd5QwD4diqe4VRSiS7GYHATbL4cLGidyNUbWha4EU7ET2jfJ7UKUVZRhNb5prZxfsJddbzaw</code></p>
+<p>Person B commands:</p>
+<p><font color="ffd008">[wallet 48e86K]: make_multisig 2 MultisigV1WHyBiEPV5rv3jgU59QUv2ZYTvmN3pwzCL8mp5jTDxkkhRzDjL1T8A2dHTYLmprbUsiLzvPLqRc1GkFHp3mq7dFq6BiE98Ur5cD6P46YYLd5QwD4diqe4VRSiS7GYHATbL4cLGidyNUbWha4EU7ET2jfJ7UKUVZRhNb5prZxfsJddbzaw</font></p>
 <p>and the output should be something like:</p>
 <p>2/2 multisig address: 47RGRFeLPT51qvDWuw7SGf57JK7AziAVqYucct8z5yEDQ1XqU8zKEjidWjqPXk7PuHP3MJDN2AJATKy9PH7zaGV7MB8X6CH</p>
-<p>Now exchange addresses and compare, <strong>they must be the same</strong>.</p>
+<p>Now exchange addresses and compare, they must be the same.</p>
 <h3 id="receiving"><font color="ffd008">Receiving</font></h3>
 <h4 id="step-1-fund-the-multisig-account"><font color="ffd008">Step 1 Fund The Multisig Account</font></h4>
 <p>This is simple. Just send to the shared address. You can send multiple times, same like normal wallet. You can use payment ID as well, or generate an integrated address to receive funds.</p>
 <p>Best part, whomever is sending the funds won't be able to tell that the address belongs to a multisig wallet since it looks as any other.</p>
 <h4 id="step-2-check-multisig-account-balance"><font color="ffd008">Step 2 Check Multisig Account Balance</font></h4>
 <p>Just open the wallet and command refresh. Once completed, both persons can verrify that the funds arrived.</p>
-<p><strong>Person A</strong> commands:</p>
-<p><code>[wallet 47HSuD]: show_transfers and can see all incoming transfers.</code></p>
+<p>Person A commands:</p>
+<p><font color="ffd008">[wallet 47HSuD]: show_transfers and can see all incoming transfers.</font></p>
 <p>1357156 in 07:50:35 PM 0.100000000000 88ba687dc79a0b39e6de6d0763eda8363d33d9f58ec9a096171bd9a7f1dae873 0000000000000000 - 1357161 in 08:00:18 PM 0.100000000000 d6ac845b9400759525519cdc5d514eb8f5b1d265b24d1c016e75b20ed3b4b7da 0000000000000000 -</p>
-<p><strong>Person B</strong> can do the same:</p>
-<p><code>[wallet 48e86K]: show_transfers and will see the same:</code></p>
+<p>Person B can do the same:</p>
+<p><font color="ffd008">[wallet 48e86K]: show_transfers and will see the same:</font></p>
 <p>1357156 in 07:50:35 PM 0.100000000000 88ba687dc79a0b39e6de6d0763eda8363d33d9f58ec9a096171bd9a7f1dae873 0000000000000000 - 1357161 in 08:00:18 PM 0.100000000000 d6ac845b9400759525519cdc5d514eb8f5b1d265b24d1c016e75b20ed3b4b7da 0000000000000000 -</p>
 <h3 id="spending"><font color="ffd008">Spending</font></h3>
 <h4 id="step-1-syncronizing-key-images"><font color="ffd008">Step 1 Syncronizing Key Images</font></h4>
 <p>Without this step, it will not be possible to create a spending transaction.</p>
-<p><strong>Person A</strong> commands:</p>
-<p><code>[wallet 47HSuD]: export_multisig_info testmp1 where</code></p>
+<p>Person A commands:</p>
+<p><font color="ffd008">[wallet 47HSuD]: export_multisig_info testmp1 where</font></p>
 <p>testmp1 can be any filename. The output will be:</p>
 <p>Multisig info exported to testmp1</p>
 <p>The file</p>
 <p>testmp1 will be located in the shell working folder*</p>
 <p>Person A sends that file to Person B.</p>
-<p><strong>Person B</strong> does the same and commands:</p>
-<p><code>[wallet 48e86K]: export_multisig_info testmp2 and the output will be:</code></p>
+<p>Person B does the same and commands:</p>
+<p><font color="ffd008">[wallet 48e86K]: export_multisig_info testmp2 and the output will be:</font></p>
 <p>Multisig info exported to testmp2</p>
 <p>The file testmp2 will be located in the shell working folder*</p>
 <p>Person B sends that file to person A.</p>
 <p>Now, they must both import each other's file.</p>
-<p><strong>Person A</strong> commands:</p>
-<p><code>[wallet 47HSuD]: import_multisig_info testmp2 (the wallet will look for it in the shell working folder*) and the output will look like:</code></p>
+<p>Person A commands:</p>
+<p><font color="ffd008">[wallet 47HSuD]: import_multisig_info testmp2 (the wallet will look for it in the shell working folder*) and the output will look like:</font></p>
 <p>2 outputs found in testmp2 Height 1357156, transaction &lt;88ba687dc79a0b39e6de6d0763eda8363d33d9f58ec9a096171bd9a7f1dae873&gt;, received 0.100000000000 Height 1357161, transaction &lt;d6ac845b9400759525519cdc5d514eb8f5b1d265b24d1c016e75b20ed3b4b7da&gt;, received 0.100000000000</p>
-<p><strong>Person B</strong> commands:</p>
-<p><code>[wallet 48e86K]: import_multisig_info testmp1 (the wallet will look for it in the shell working folder*) and the output will look like:</code></p>
+<p>Person B commands:</p>
+<p><font color="ffd008">[wallet 48e86K]: import_multisig_info testmp1 (the wallet will look for it in the shell working folder*) and the output will look like:</font></p>
 <p>2 outputs found in testmp1 Height 1357156, transaction &lt;88ba687dc79a0b39e6de6d0763eda8363d33d9f58ec9a096171bd9a7f1dae873&gt;, received 0.100000000000 Height 1357161, transaction &lt;d6ac845b9400759525519cdc5d514eb8f5b1d265b24d1c016e75b20ed3b4b7da&gt;, received 0.100000000000 Multisig info imported</p>
 <h4 id="step-2-preparing-spending-transaction"><font color="ffd008">Step 2 Preparing Spending Transaction</font></h4>
 <p>Either person A or person B can do this, it doesn't matter. To avoid weird things from happening only do it for 1 transaction at a time.</p>
-<p><strong>Person A</strong> performs the usual</p>
+<p>Person A performs the usual</p>
 <p>transfer command:</p>
-<p><code>[wallet 47HSuD]: transfer 47wbKEXBGnyHohezMGpD6y2SFNczrSpeSfQgFW5cMxMziFuHpBWM9yjBLJ1iTv31AwN6daPg1QXfRKBJGq2XZDekNqv8gsP 0.15</code></p>
+<p><font color="ffd008">[wallet 47HSuD]: transfer 47wbKEXBGnyHohezMGpD6y2SFNczrSpeSfQgFW5cMxMziFuHpBWM9yjBLJ1iTv31AwN6daPg1QXfRKBJGq2XZDekNqv8gsP 0.15</font></p>
 <p>The output will look like:</p>
 <p>Unsigned transaction(s) successfully written to file: multisig_arqma_tx*</p>
 <p>Check in the folder where you started</p>
 <p>arqma-wallet-cli from*. There should be a file named</p>
 <p>multisig_arqma_tx.</p>
 <p>Send the file multisig_arqma_tx to the person B.</p>
-<p><strong>Person B</strong> must finish the signature. Person B copies the file to the same folder from where he started (or will start)</p>
+<p>Person B must finish the signature. Person B copies the file to the same folder from where he started (or will start)</p>
 <p>arqma-wallet-cli*.</p>
 <p>Then, Person B commands:</p>
-<p><code>[wallet 48e86K]: sign_multisig multisig_arqma_tx and a prompt will be displayed to allow person B to check the transaction before signing:</code></p>
+<p><font color="ffd008">[wallet 48e86K]: sign_multisig multisig_arqma_tx and a prompt will be displayed to allow person B to check the transaction before signing:</font></p>
 <p>Loaded 1 transactions, for 0.200000000000, fee 0.015570240000, sending 0.150000000000 to 47wbKEXBGnyHohezMGpD6y2SFNczrSpeSfQgFW5cMxMziFuHpBWM9yjBLJ1iTv31AwN6daPg1QXfRKBJGq2XZDekNqv8gsP, 0.034429760000 change to 47RGRFeLPT51qvDWuw7SGf57JK7AziAVqYucct8z5yEDQ1XqU8zKEjidWjqPXk7PuHP3MJDN2AJATKy9PH7zaGV7MB8X6CH, with min mixin 4. Is this okay? (Y/Yes/N/No):</p>
 <p>If ok, answer</p>
 <p>Y, and the output will look like:</p>
 <p>Transaction successfully signed to file multisig_arqma_tx, txid bb998b00dad0c245b45b975277d9b685592b412fd5fb58b2c1805091418c8b49.</p>
 <p>Finally, person B submits the transaction to the network by commanding:</p>
-<p><code>[wallet 48e86K]: submit_multisig multisig_arqma_tx and there will be a confirmation prompt:</code></p>
+<p><font color="ffd008">[wallet 48e86K]: submit_multisig multisig_arqma_tx and there will be a confirmation prompt:</font></p>
 <p>Loaded 1 transactions, for 0.200000000000, fee 0.015570240000, sending 0.150000000000 to 47wbKEXBGnyHohezMGpD6y2SFNczrSpeSfQgFW5cMxMziFuHpBWM9yjBLJ1iTv31AwN6daPg1QXfRKBJGq2XZDekNqv8gsP, 0.034429760000 change to 47RGRFeLPT51qvDWuw7SGf57JK7AziAVqYucct8z5yEDQ1XqU8zKEjidWjqPXk7PuHP3MJDN2AJATKy9PH7zaGV7MB8X6CH, with min mixin 4. Is this okay? (Y/Yes/N/No):</p>
 <p>If ok, answer</p>
 <p>Y, and the transaction will be sent. The output will look like:</p>
