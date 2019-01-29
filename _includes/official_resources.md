@@ -8,4 +8,4 @@ Athough ArQmA is community driven, official resources are considered to be those
 * [Pool list](https://pools.arqma.com)
 * [Payment Gateway](https://pg.arqma.com)
 * [Offline Wallet Generator](https://generate.arqma.com/)
-* [MyArQmA -webwallet](https://myarqma.com)
+* [MyArQmA Webwallet](https://myarqma.com)
