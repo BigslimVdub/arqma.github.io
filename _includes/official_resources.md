@@ -5,3 +5,4 @@ Athough ArQmA is community driven, official resources are considered to be those
 * [BitcoinTalk](https://bitcointalk.org/index.php?topic=4474605.0)
 * [Pool list](https://pools.arqma.com)
 * [Payment Gateway](https://pg.arqma.com)
+* [Offline Wallet Generator](https://generate.arqma.com/)
