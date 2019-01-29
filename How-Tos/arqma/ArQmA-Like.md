@@ -299,10 +299,10 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <p>Website: <a href="https://arqma.com/">https://arqma.com/</a></p>
 <p>BitcoinTalk ANN: <a href="https://bitcointalk.org/index.php?topic=4474605.0">https://bitcointalk.org/index.php?topic=4474605.0</a></p>
 <p>Youtube channel: <a href="https://www.youtube.com/channel/UC24ZbH8J1SKpxmdakIJotoA">https://www.youtube.com/channel/UC24ZbH8J1SKpxmdakIJotoA</a></p>
-<p>Discord invite: [https://discord.gg/s9BQpJT]](https://discord.gg/s9BQpJT)</p>
+<p>Discord invite: <a href="https://discord.gg/s9BQpJT">https://discord.gg/s9BQpJT</a></p>
 <p>Github: <a href="https://github.com/Arqma">https://github.com/Arqma</a> (source, binaries, wallets, explorer, pool)</p>
 <p>IRC: To be determined</p>
-<p>Medium blog: <a href="https://medium.com/@ArQmANetwork"><https://medium.com/@ArQmANetwork</a></p>
+<p>Medium blog: <a href="https://medium.com/@ArQmANetwork">https://medium.com/@ArQmANetwork</a></p>
 <p>Reddit: <a href="https://www.reddit.com/r/arqma/">https://www.reddit.com/r/arqma/</a></p>
 <p>Telegram: <a href="https://t.me/joinchat/HNpOMRIiNSoCn0zYrAOofw">https://t.me/joinchat/HNpOMRIiNSoCn0zYrAOofw</a></p>
 <p>Twitter: <a href="https://twitter.com/ArQmA_Network">https://twitter.com/ArQmA_Network</a></p>
