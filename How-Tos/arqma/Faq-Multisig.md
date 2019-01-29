@@ -1,5 +1,5 @@
 <p>Copyright 2019 The ArQmA Project</p>
-<h1 id="arqma-22-multisig-wallet-transfers"><font color="ffd008">ArQmA 2/2 Multisig Wallet Transfers</font>/h1>
+<h1 id="arqma-22-multisig-wallet-transfers"><font color="ffd008">ArQmA 2/2 Multisig Wallet Transfers</font></h1>
 <p>Purpose: Enable a balance on a joint account that requires 2 or more signatures from separate accounts and their respective digital signatures. A spend transaction that is one way only forward can then be created and enabled from both parties. Refunds and recourses have to be dealt with the seller directly.</p>
 <p>Also, a third party signer could also be enabled as an escrow agent could also enable pend forward only transactions or with both buyer and seller agreeing to cancel a purchase the escrow agent can send funds to one party, both or the seller with signoff signatures.</p>
 <p>First, the buyers wallet to be converted to multisig must be empty. It is best to use a brand-new, separate walllet for the purpose, although not required. It is strongly advised to make a copy of the wallet files first, just in case something goes wrong. Also the buyer needs to transfer funds from their normal spending wallet to this multisig wallet for personal security and anonymitiy reasons. ### Set-up</p>
