@@ -10,3 +10,4 @@ Athough ArQmA is community driven, official resources are considered to be those
 * [WooCommerce Gateway](https://github.com/arqma/arqma-payments-woocommerce-gateway)
 * [Offline Wallet Generator](https://generate.arqma.com/)
 * [MyArQmA Webwallet](https://myarqma.com)
+* [ArqmaDroid wallet](https://play.google.com/store/apps/details?id=com.arqma.Droid)
