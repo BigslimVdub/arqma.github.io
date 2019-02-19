@@ -21,7 +21,7 @@
 
 	<h1><font color="ffd008">ArQmA</font></h1>
         <p>ArQmA - Revolution of the monetary system. Welcome!</p>
-        
+
         <input type="checkbox" name="accordion" id="official_resources" checked>
         <label for="official_resources"><h2><font color="ffd008">Official Resources</font></h2></label>
         <div class="panel">
