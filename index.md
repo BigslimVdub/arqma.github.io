@@ -23,7 +23,7 @@
         <p>ArQmA - Revolution of the monetary system. Welcome!</p>
         <div id="app">
             <div class="height">
-            <h2><font color="ffd008">Block height {{height}}</h2>
+            <h2><font color="ffd008">Block height {{height}}</font></h2>
             </div>
           </div>
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
