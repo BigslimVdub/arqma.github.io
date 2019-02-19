@@ -21,14 +21,6 @@
 
 	<h1><font color="ffd008">ArQmA</font></h1>
         <p>ArQmA - Revolution of the monetary system. Welcome!</p>
-        <div id="app">
-            <div class="height">
-            <h2><font color="ffd008">Block height {{height}}</h2>
-            </div>
-          </div>
-        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
-        <script src="https://unpkg.com/vue"></script>
-        <script src="main.js"></script>
 
         <input type="checkbox" name="accordion" id="official_resources" checked>
         <label for="official_resources"><h2><font color="ffd008">Official Resources</font></h2></label>
