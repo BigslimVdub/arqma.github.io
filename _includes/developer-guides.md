@@ -1,4 +1,4 @@
 Monero and ArQmA share documentation for RPC methods.
 
-- [Daemon RPC Documentation](https://ww.getmonero.org/resources/developer-guides/daemon-rpc.html)
-- [Wallet RPC Documentation](https://www.getmonero.org/resources/developer-guides/wallet-rpc.html)
+- [Daemon RPC Documentation](https://arqma.github.io/arqma-rpc-js/RPCDaemon.html)
+- [Wallet RPC Documentation](https://arqma.github.io/arqma-rpc-js/RPCWallet.html)

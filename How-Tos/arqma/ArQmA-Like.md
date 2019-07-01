@@ -50,7 +50,7 @@
 <p>A payment gateway with transactions completing in under ten seconds for e-commerce and personal usage.</p>
 <p>The specs for the coin are:</p>
 <ul>
-<li><p>PoW algorithm: CryptoNight-Lite PoW</p></li>
+<li><p>PoW algorithm: CryptoNight-Pico PoW</p></li>
 <li><p>Max supply: ~50 million</p></li>
 <li><p>Block reward: ~20 smoothly varying</p></li>
 <li><p>Block time: 240 seconds , changing to 120 seconds at V10 fork.</p></li>
@@ -261,7 +261,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <h2 id="reward-and-coin-specifications"><font color="ffd008">REWARD AND COIN SPECIFICATIONS</font></h2>
 <p>Initial ARQ reward was 20.26 subtracted from the curve amount computed. Block 1 included the 7.5 Million ARQ pre mine.</p>
 <ul>
-<li><p>PoW algorithm: CryptoNight-Lite PoW</p></li>
+<li><p>PoW algorithm: CryptoNight-Pico PoW</p></li>
 <li><p>Max supply: ~50 million</p></li>
 <li><p>Block reward: ~20 smoothly varying</p></li>
 <li><p>Block time: 240 seconds, going to 120 seconds at V10 Fork approx 12/14/2018.</p></li>
