@@ -3,6 +3,7 @@ Athough ArQmA is community driven, official resources are considered to be those
 * [Website](https://www.arqma.com)
 * [GitHub](https://github.com/arqma/)
 * [Block Explorer](https://blockexplorer.arqma.com/)
+* [Vision Explorer](https://vision.arqma.com/)
 * [Blockchain raw file](https://raw.arqma.com/)
 * [BitcoinTalk](https://bitcointalk.org/index.php?topic=4474605.0)
 * [Pool list](https://pools.arqma.com)
