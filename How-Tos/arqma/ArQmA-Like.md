@@ -91,6 +91,7 @@
 <p>There are no ICO tokens involved, produced, or burned, or secured. That means this is not a security as defined by some governmental parties. Check with your local authorities for updates. ArQmA is not an ERC-20 token, therefore doesn't fall under the US SEC restrictions.</p>
 <p>ArQmA Community donation wallet address: ar46iCiw5uB7SjnYhL5EJLP1LpqGkZbCcWhWgdbLL1c4DicNuYi3ZeRJPi8FFmEhYnagbxRyaQKyTYBA95JqmPcr1XZytK9o3</p>
 <p>Viewkey: 4e5373dfd5ba67fa2988107a605bc960575c465bd07aba624915d3f660b73d62</p>
+<p>Premine will be burned in HardFork 13. Emission will back to about 6 MLN ARQ</p>
 <p>The network is resistant to specialized hardware (ASICs), allowing more people to participate directly with their PC by mining or running a full node. Everyone is welcome to contribute to the ongoing effort. There are two primary chat servers, Discord and Telegram. A Reddit discussion forum, and a forum on Bitcointalk.org .</p>
 <p>NOTE: Many of the points referenced above are covered in more detail in section</p>
 <h2 id="arqma-differentiation-1"><font color="ffd008">3 ArQmA Differentiation</font></h2>
@@ -335,7 +336,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <p>Available for download at: <a href="https://arqma.com/download/">https://arqma.com/download/</a></p>
 <h2 id="development-team"><font color="ffd008">5.5 Development Team</font></h2>
 <p>Lead developers: Michal vel M@lbit and ArqTras</p>
-<p>Contributing developers: SmajeNz0, Bob, Argonator,</p>
+<p>Contributing developers: SmajeNz0, Bob, Muscleman,</p>
 <p>Graphic Design : UNI_The_Great</p>
 <h2 id="current-work-and-future-plans"><font color="ffd008">5.6 Current Work and Future Plans</font></h2>
 <p>The ArQmA payment gateway for sending payments under ten seconds is nearing completion:</p>
