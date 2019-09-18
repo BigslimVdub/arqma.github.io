@@ -59,7 +59,7 @@
 <li><p>Properly set 1MB Scratchpad to eliminate time-waste hashing by trying to divide into a 2MB Scratchpad like other projects have done.</p></li>
 <li><p>Asic resistance : Yes, deliberately for miner equitably fair support.</p></li>
 <li><p>Nicehash resistance: Yes, deliberately for miner equitably fair support.</p></li>
-<li><p>BulletProof Ring CT, minimum level 7, maximum 41</p></li>
+<li><p>BulletProof Ring CT, minimum level 11, maximum 41</p></li>
 <li><p>True DNS SEC authorization between nodes.</p></li>
 <li><p>LWMA 2 Difficulty Algorithm securing network against 51%+ hash rate attacks and difficulty</p></li>
 <li><p>swings of an extreme nature.</p></li>
@@ -74,7 +74,7 @@
 <p>For example, the double deposit bug, a variant of double spend, which affected exchanges of varying code bases of Monero were being attacked before ArQmA was launched. We detected it from an alert from an exchange and took steps accordingly matching it to an outstanding issue listed for several weeks. We discovered that other Monero coins were being affected by code review of others, and decided to push the issue to a higher visibility. Using the ethical disclosure method to Monero, we escalated the issue's importance of it being fixed due to losses from the exchange. Within a few days, many exchanges were saved from being exploited.</p>
 <h2 id="lightweight"><font color="ffd008">2.2 Lightweight</font></h2>
 <p>ArQmA seeks to be mobileâ€”friendly by implementing, among other things, the following technical features:</p>
-<p>A lightweight Proof of Work algorithm: Cryptonight-lite variant 1.</p>
+<p>A lightweight Proof of Work algorithm: Cryptonight-Pico aka Turtle.</p>
 <ul>
 <li><p>Blockchain pruning</p></li>
 <li><p>Optional lightweight semi-traceable transactions for the ones you want to trace with your secret keys. But also it is not traceable for anyone to log and trace due to random mixins of transactions and ring CT security.</p></li>
@@ -85,10 +85,7 @@
 <p>Privacy is paramount. Funds are transferred without the identifying information of the user becoming visible on the blockchain. In addition, the receiving wallet addresses are obfuscated with ring signature technology and non-repeating one-time addresses derived from the receiving public key. These measures make the blockchain highly resistant to analysis. Specifically, the reuse of shared keys used to be a detriment of allowing a trace back, but that was closed just after ArQmA was launched. The code was evaluated and tested to be worthy and added.</p>
 <p>Open Aliases of addresses are allowed and have added to the code base. One can have am easy to remember address to be paid at to that decodes to the full private address. Open Aliases are registered within the ArQmA node system and decoded similar to a DNS address within the wallet applications.</p>
 <h2 id="low-barrier-to-participation"><font color="ffd008">2.4 Low Barrier to Participation</font></h2>
-<p>Founded as an Open Source project, ArQmA is free to use without restriction. In addition, there was a pre mine of 7.5 million coins. It is to be locked on a schedule basis to cover operating costs of the 1Gbits high speed network, and server hardware infrastructure, firewalls.</p>
-<p>Pre mine wallet address: ar4DExwEr4qM2dBRimSjZ5B11rZbAS9HEFeMYkgw3Ts4NQvS2NY2ra22M5CoQBDifWVxfig8fz7QvQ3xDmGtRt1o1UP8jPTEQ</p>
-<p>View key: 3ee53c136c57080c340e56f0545dad23a591b8bd5d2b89cff3c4182c88aa36fc Premine wallet includes Dev income (1.5 mln to Malbit and 1.5mln to ArqTras).</p>
-<p>There are no ICO tokens involved, produced, or burned, or secured. That means this is not a security as defined by some governmental parties. Check with your local authorities for updates. ArQmA is not an ERC-20 token, therefore doesn't fall under the US SEC restrictions.</p>
+<p>There are no ICO tokens involved, produced, or secured. That means this is not a security as defined by some governmental parties. Check with your local authorities for updates. ArQmA is not an ERC-20 token, therefore doesn't fall under the US SEC restrictions.</p>
 <p>ArQmA Community donation wallet address: ar46iCiw5uB7SjnYhL5EJLP1LpqGkZbCcWhWgdbLL1c4DicNuYi3ZeRJPi8FFmEhYnagbxRyaQKyTYBA95JqmPcr1XZytK9o3</p>
 <p>Viewkey: 4e5373dfd5ba67fa2988107a605bc960575c465bd07aba624915d3f660b73d62</p>
 <p>Premine will be burned in HardFork 13. Emission will back to about 6 MLN ARQ</p>
@@ -188,7 +185,6 @@
 <p>&quot;Our primary goal is to close the gap between CPU (majority) and GPU/FPGA/ASIC (minority) miners. It is appropriate that some users can have a certain advantage over others, but their in vestments should grow at least linearly with the power. More generally, producing special purpose devices has to be as less profitable as possible.&quot;</p>
 <p>The CryptoNight algorithm accomplishes this goal in 2 primary ways.</p>
 <p>It uses built in CPU instructions, which are difficult to implement in specialized hardware.</p>
-<p>It relies on access to unpredictable locations in a 2 MB &quot;scratchpad&quot; of CPU memory, rather than relying solely on CPU processing speed.</p>
 <p>These factors effectively limit the advantages of GPU,s over CPU,s and make it too costly to produce specialized ASIC hardware for mining.</p>
 <p>For its proof of work, ArQmA implements a variation of this algorithm, called CryptoNight Lite.</p>
 <p>As the name suggests, this is a lightweight version of the original algorithm, which utilizes a 1 MB scratchpad. This results in half the iterations needed to compute a hash, and half the required L3 cache CPU memory. Many lower end processors (on mobile devices) will have the required 1 MB of CPU cache, and multiâ€”core CPU processors will see up to a 4X performance boost over the heavier CryptoNight algorithm. Many other CPU only based coins have blossomed over the simplicity of mining with a faster algorithm using less resources (cores, CPU cycles, cache amount, iterations). Therefore it is perceived as &quot;greener&quot; mining using less electricity.</p>
@@ -206,7 +202,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <p>&quot;ar34szdgR9WhapJASiMyGU2dtQz993TK9Y3ZAeFTLDC5LY2tu2kqR1YbXqKu3buoQfFSUGexxKcxNazUSJN272f52eNenP5zp&quot;.</p>
 <p>However, this is convenient, but lacks privacy on the receiver's side. The receiver can change the registration to provide obfuscation, or provide a similar integrated address instead.</p>
 <h2 id="one-time-use-keys"><font color="ffd008">4.2.1 One-Time-Use Keys</font></h2>
-<p>ArQmA uses the CryptoNote solution to receive payments at a oneâ€”timeâ€”use public key address, rather than the recipients public wallet address. The public key is generated by the sender, using both the recipients public wallet address and some random data. Once generated, funds are sent directly to this public key, which can be used only once. The recipient can later spend any received coins, by using a one time use private key (called a ring signature) which corresponds to the one time public key.</p>
+<p>ArQmA uses the CryptoNote solution to receive payments at a onee time use public key address, rather than the recipients public wallet address. The public key is generated by the sender, using both the recipients public wallet address and some random data. Once generated, funds are sent directly to this public key, which can be used only once. The recipient can later spend any received coins, by using a one time use private key (called a ring signature) which corresponds to the one time public key.</p>
 <p>The following picture, from the CryptoNote white paper, shows that the one time public keys are never linked to the receivers public wallet address on the blockchain. This effectively keeps the receiving wallet anonymous.</p>
 <h2 id="one-time-ring-signatures"><font color="ffd008">4.2.2 One-Time Ring Signatures</font></h2>
 <p>After funds are received via a oneâ€”time public key, the recipient is able to spend the funds at any time, using a one time ring signature. The goal of the ring signature is to keep the sending address anonymous on the blockchain.</p>
@@ -254,6 +250,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <li><p>June 14; 2018.</p></li>
 <li><p>Block time = 4 minutes for blocks 2-65000(est) .</p></li>
 <li><p>At V10 fork, the block time is 2 minutes. Estimated 12/14/2018.</p></li>
+<li><p>At V13 fork, premined coins burned.</p></li>
 </ul>
 <p>ArQmA forks:</p>
 <p>Block 7000: 12/14/2018 V10 Fork 2 minute block time.</p>
@@ -265,7 +262,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <li><p>PoW algorithm: CryptoNight-Pico PoW</p></li>
 <li><p>Max supply: ~50 million</p></li>
 <li><p>Block reward: ~20 smoothly varying</p></li>
-<li><p>Block time: 240 seconds, going to 120 seconds at V10 Fork approx 12/14/2018.</p></li>
+<li><p>Block time: 120 seconds, going to 120 seconds at V10 Fork approx 12/14/2018.</p></li>
 <li><p>Difficulty: Re-targets at every block using LWMA2 and possibly another modification to v4.</p></li>
 <li><p>Block confirmation: 18 blocks, upon release of V 0.2.0 this will be 10 blocks</p></li>
 <li>Properly set 1MB Scratchpad to eliminate time-waste hashing by trying to divide into a 2MB</li>
