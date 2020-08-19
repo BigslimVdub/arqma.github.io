@@ -1,4 +1,4 @@
-<h1 id="copyright-2018-2019-the-arqma-project"><strong><font color="ffd008">Copyright 2018-2019 The ArQma Project</font></strong></h1>
+<h1 id="copyright-2018-2020-the-arqma-project"><strong><font color="ffd008">Copyright 2018-2019 The ArQma Project</font></strong></h1>
 <h2 id="the-arqma-project---secured-digital-currency"><font color="ffd008">The ArQmA Project - Secured Digital Currency</font></h2>
 <h4 id="arqmas-vision"><font color="ffd008">Arqma's Vision:</font></h4>
 <p>1 Flexible, private, crypto currency with a payment gateway for e-commerce and personal use.</p>
@@ -50,19 +50,18 @@
 <p>A payment gateway with transactions completing in under ten seconds for e-commerce and personal usage.</p>
 <p>The specs for the coin are:</p>
 <ul>
-<li><p>PoW algorithm: CryptoNight-Pico PoW</p></li>
+<li><p>PoW algorithm: RandomARQ PoW</p></li>
 <li><p>Max supply: ~50 million</p></li>
 <li><p>Block reward: ~20 smoothly varying</p></li>
 <li><p>Block time: 240 seconds , changing to 120 seconds at V10 fork.</p></li>
 <li><p>Difficulty: re-targets at every block</p></li>
 <li><p>Block confirmation: 18 blocks</p></li>
-<li><p>Properly set 1MB Scratchpad to eliminate time-waste hashing by trying to divide into a 2MB Scratchpad like other projects have done.</p></li>
 <li><p>Asic resistance : Yes, deliberately for miner equitably fair support.</p></li>
 <li><p>Nicehash resistance: Yes, deliberately for miner equitably fair support.</p></li>
 <li><p>BulletProof Ring CT, minimum level 11, maximum 41</p></li>
 <li><p>True DNS SEC authorization between nodes.</p></li>
 <li><p>LWMA 2 Difficulty Algorithm securing network against 51%+ hash rate attacks and difficulty</p></li>
-<li><p>swings of an extreme nature.</p></li>
+<li><p>Swings of an extreme nature.</p></li>
 <li><p>Ticker: ARQ</p></li>
 <li><p>Emission rate planned on 30 years</p></li>
 <li><p>Support for integrated addresses, and Open Alias for short names to private addresses.</p></li>
