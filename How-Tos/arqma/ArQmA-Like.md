@@ -1,4 +1,4 @@
-<h1 id="copyright-2018-2020-the-arqma-project"><strong><font color="ffd008">Copyright 2018-2019 The ArQma Project</font></strong></h1>
+<h1 id="copyright-2018-2020-the-arqma-project"><strong><font color="ffd008">Copyright 2018-2020 The ArQma Project</font></strong></h1>
 <h2 id="the-arqma-project---secured-digital-currency"><font color="ffd008">The ArQmA Project - Secured Digital Currency</font></h2>
 <h4 id="arqmas-vision"><font color="ffd008">Arqma's Vision:</font></h4>
 <p>1 Flexible, private, crypto currency with a payment gateway for e-commerce and personal use.</p>
@@ -258,7 +258,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <h2 id="reward-and-coin-specifications"><font color="ffd008">REWARD AND COIN SPECIFICATIONS</font></h2>
 <p>Initial ARQ reward was 20.26 subtracted from the curve amount computed. Block 1 included the 7.5 Million ARQ pre mine.</p>
 <ul>
-<li><p>PoW algorithm: CryptoNight-Pico PoW</p></li>
+<li><p>PoW algorithm: RandomARQ PoW</p></li>
 <li><p>Max supply: ~50 million</p></li>
 <li><p>Block reward: ~20 smoothly varying</p></li>
 <li><p>Block time: 120 seconds, going to 120 seconds at V10 Fork approx 12/14/2018.</p></li>
@@ -273,7 +273,7 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <li><p>Ticker: ARQ</p></li>
 <li><p>Emission rate planned on 30 years</p></li>
 <li><p>Minimum mixins 6 and in v 0.2 the minimum goes to 10.</p></li>
-<li><p>Ring CT minimum 7. Maximum 41.</p></li>
+<li><p>Ring CT minimum 11. Maximum 41.</p></li>
 <li><p>Simple Ring CT Bulletproofs transaction recording for now and we will implement full -Bulletproofs later.</p></li>
 <li><p>ArQmA uses tx version 2 for transactions whereas ring CT 0 was tx version 1.</p></li>
 </ul>
@@ -296,31 +296,33 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'">'+e+'<\/'+'a'+'>');
 <p>Website: <a href="https://arqma.com/">https://arqma.com/</a></p>
 <p>BitcoinTalk ANN: <a href="https://bitcointalk.org/index.php?topic=4474605.0">https://bitcointalk.org/index.php?topic=4474605.0</a></p>
 <p>Youtube channel: <a href="https://www.youtube.com/channel/UC24ZbH8J1SKpxmdakIJotoA">https://www.youtube.com/channel/UC24ZbH8J1SKpxmdakIJotoA</a></p>
-<p>Discord invite: <a href="https://discord.gg/s9BQpJT">https://discord.gg/s9BQpJT</a></p>
+<p>Discord invite: <a href="https://chat.arqma.com">https://chat.arqma.com</a></p>
 <p>Github: <a href="https://github.com/Arqma">https://github.com/Arqma</a> (source, binaries, wallets, explorer, pool)</p>
 <p>IRC: To be determined</p>
 <p>Medium blog: <a href="https://medium.com/@ArQmANetwork">https://medium.com/@ArQmANetwork</a></p>
 <p>Reddit: <a href="https://www.reddit.com/r/arqma/">https://www.reddit.com/r/arqma/</a></p>
-<p>Telegram: <a href="https://t.me/joinchat/HNpOMRIiNSoCn0zYrAOofw">https://t.me/joinchat/HNpOMRIiNSoCn0zYrAOofw</a></p>
+<p>Telegram: <a href="https://telegram.arqma.com">https://telegram.arqma.com</a></p>
 <p>Twitter: <a href="https://twitter.com/ArQmA_Network">https://twitter.com/ArQmA_Network</a></p>
 <h2 id="block-explorers"><font color="ffd008">5.1.2 Block Explorers</font></h2>
 <p>ArQmA block explorer: <a href="https://blockexplorer.arqma.com/">https://blockexplorer.arqma.com/</a></p>
-<p>ArQmA Pool Statistics: <a href="https://pools.arqma.com/">https://pools.arqma.com</a></p>
-<p>Android pool status monitor for Android at: <a href="https://play.google.com/store/apps/details?id=com.arqma.poolmonitor">https://play.google.com/store/apps/details?id=com.arqma.poolmonitor</a></p>
+<p>ArQmA block explorer 2: <a href="https://explorer.arqma.com/">https://explorer.arqma.com/</a></p>
 <h2 id="mining"><font color="ffd008">5.2 Mining</font></h2>
-<p>Any miner application that can mine cryptonight-lite algorithm variant1, (also described as aeon7 by XMR-STAK miner as the &quot;currency type&quot;) can mine ArQmA with pools or solo with a standalone node.</p>
+<p>Any miner application that can mine RandomARQ algorithm, (also described as rx/arq by XMR-STAK miner as the &quot;currency type&quot;) can mine ArQmA with pools or solo with a standalone node.</p>
 <h2 id="mining-applications"><font color="ffd008">5.2.1 Mining Applications</font></h2>
 <p>The most popular mining applications are xmr-stak and xmrig. For additional options, check with the community. There is a ArQmA mining standalone application based on a fork from Stellite GUI Miner. It is not required to use it, but does display and operate all the typical controls of xmr-stak,xmrig, and has status information from the API interface at ArQmA, and commonly helpful links to check into updates of ArQmA.</p>
 <p>The ArQmA GUI wallet application for desktops and tablets can mine on a local setting with the new function of the correct number of threads. It is technically possible to mine on mobile devices, but at an extreme usage of battery and low hash rate below even pre-AES capable desktop CPUs.</p>
 <p>The GUI wallet is available on Windows, Linux, Mac OS desktops, and soon the iPhone. There is also a pool status monitor available for Android. All of these tools are available on the main ArQmA download section at: <a href="https://arqma.com/download/">https://arqma.com/download/</a></p>
 <p>There is a generic java based web miner application out there that is not sponsored, supported, or supervised by ArQmA that also mines other types of Cryptonight coins also. It is inefficient and may have security concerns of stealing hash rate or identity information. It is not advised by the founders or support to use it.</p>
 <h2 id="mining-pools"><font color="ffd008">5.2.2 Mining Pools</font></h2>
-<p>There are several ArQmA mining pools operating. It is recommended to join a small to medium sized pool, to spread out the hash rate across the network as much as possible. Look on the community Links to current ArQmA mining pools: <a href="https://pools.arqma.com/">https://pools.arqma.com</a></p>
+<p>There are several ArQmA mining pools operating. It is recommended to join a small to medium sized pool, to spread out the hash rate across the network as much as possible. Look on the community Links to current ArQmA mining pools: <a href="https://miningpoolstats.stream/arqma">https://miningpoolstats.stream/arqma</a></p>
 <p>The main issue as with many coins, is that miners should spread the hashrate to prevent centralization of any pool more than 30-50% of the total. The instant returns on joining a large pool is possible, but diluted when you consider a miner's share of the total is less.</p>
 <p>Using probabilistic rotation , one could rotate through all the pools with mining and obtain the same overall luck and effort to obtain rewards and blocks for each pool. The longer you mine, the more average this becomes.</p>
 <h2 id="exchanges"><font color="ffd008">5.3 Exchanges</font></h2>
 <p>Tradeogre : <a href="https://tradeogre.com/">https://tradeogre.com/</a></p>
 <p>Crex24: <a href="https://crex24.com/">https://crex24.com</a></p>
+<p>Citex: <a href="https://trade.citex.io/trade/ARQ_BTC">https://trade.citex.io/trade/ARQ_BTC</a></p>
+<p>GJ ETH: <a href="https://www.gj.com/trade/arqeth">https://www.gj.com/trade/arqeth</a></p>
+<p>GJ USDT: <a href="https://www.gj.com/trade/arqusdt">https://www.gj.com/trade/arqusdt</a></p>
 <p>Visit the ArQmA website to find a current list of exchanges which trade ArQmA.</p>
 <h2 id="wallets"><font color="ffd008">5.4 Wallets</font></h2>
 <p>ArQmA web wallet for instant creation for mining and transactions: <a href="https://myarqma.com/">https://myarqma.com</a></p>
